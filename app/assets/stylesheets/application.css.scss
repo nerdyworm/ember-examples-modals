@@ -1,0 +1,29 @@
+/*
+ *= require_self
+ *= require_tree .
+ */
+
+body {
+  font-family: Georgia;
+  font-size: 100%;
+  line-height: 1.75em;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  td {
+    border: 1px solid #efefef;
+    padding: 5px;
+  }
+
+  td.actions {
+    width: 100px;
+  }
+}

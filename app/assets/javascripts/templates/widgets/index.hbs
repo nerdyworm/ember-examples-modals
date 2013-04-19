@@ -1,0 +1,20 @@
+<button {{action create}}>Create</button>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each controller}}
+    <tr>
+      <td>{{#linkTo widgets.show this}}{{name}}{{/linkTo}}</td>
+      <td class="actions">
+        <button {{action edit this}}>edit</button>
+        <button {{action confirmDelete this}}>delete</button>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

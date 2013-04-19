@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Widget Factory</h1>
+
+  <div class="nav">
+    {{#linkTo widgets}}Widgets{{/linkTo}} - {{#linkTo cogs}}Cogs{{/linkTo}}
+  </div>
+
+  <div class="main">
+    {{outlet}}
+  </div>
+</div>
+
+{{outlet modal}}
