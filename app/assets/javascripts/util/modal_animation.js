@@ -14,11 +14,12 @@ App.animateModalClose = function() {
 App.animateModalOpen = function() {
   var promise = new Ember.RSVP.Promise();
 
+  $('.modal').addClass('in');
+  $('.modal-backdrop').addClass('in');
+
   setTimeout(function() {
-    $('.modal').addClass('in');
-    $('.modal-backdrop').addClass('in');
     promise.resolve();
-  }, 0);
+  }, App.DEFAULT_CSS_TRANSITION_DURATION_MS);
 
   return promise;
 };
