@@ -1,6 +1,6 @@
 App.ModalController = Em.ObjectController.extend({
   edit: function(record) {
-    record.on('didUpdate', this, function() {
+    record.one('didUpdate', this, function() {
       this.send('close');
     });
 
